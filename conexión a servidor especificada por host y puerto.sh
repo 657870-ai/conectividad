@@ -3,6 +3,7 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #include <stdio.h>
+#include <stderr>
 #include <errno.h>
 #include <unistd.h>
 #include <string.h>
