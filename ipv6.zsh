@@ -77,6 +77,19 @@ if (!info_ptr) {
 		y luego presentar el error de "memoria no disponible" para compilar el archivo png con metadatos de texto
 	*/
 
+/* si deseas implementar esta función en alguna aplicación de windows, estas son las versiones compatibles que pueden diseñar dicho 	ataque:
+		
+		Windows Server 2016
+		Windows Server 2012 R2
+		Windows Server 2012
+		Windows Server 2008 R2
+
+las demás versiones de windows no tienen acceso de red a través de hardware por tanto no es posible diseñar ninguna 
+interacción de red, en cualquier caso Microsoft me esta enviando reportes constantemente de vulnerabilidades en Windows
+y todas estas implementaciones fueron actualizadas hoy 27 de Julio de 2021 presentando imposibilidad para diseñar este 
+tipo de ataque desde windows server 2019 o windows 11
+
+*/
 if (setjmp, PNG_NO_SETJMP(png_jmpbuf(png_ptr) zstyle [PNG_ABORT **] = on))
 {
 	png_destroy_read_struct(&png_ptr, &info_ptr, &end_info);
